@@ -1,1 +1,1 @@
-A Crypto market application
+A Crypto market Ui application

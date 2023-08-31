@@ -1,36 +1,43 @@
+import React, { useEffect } from "react";
+import "./App.css";
+import Home from "./home";
+import People from "./people";
+import City from "./city";
+import Map from "./map";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+function App() {
+  const loadTheme = (theme) => {
+    const root = document.querySelector("#root");
+    root.setAttribute("color-scheme", `${theme}`);
+    localStorage.setItem("mode", theme);
+  };
 
-
-import React, {Component} from "react";
-import "./App.css"
-import Home from "./home"
-import People from "./people"
-import City from "./city"
-import Map from "./map"
-import {BrowserRouter, Route,Redirect, Switch} from "react-router-dom"
-class App extends Component{
-  render(){
-    return(
-
-      <BrowserRouter>
+  useEffect(() => {
+    const mode = localStorage.getItem("mode");
+    if (mode === null) {
+      loadTheme("light");
+    } else {
+      loadTheme(mode);
+    }
+  }, []);
+  return (
+    <BrowserRouter>
       <Switch>
         <Route exact path="/">
-       <Home/>
+          <Home />
         </Route>
         <Route exact path="/people">
-       <People/>
+          <People />
         </Route>
         <Route exact path="/map">
-       <Map/>
+          <Map />
         </Route>
         <Route exact path="/city">
-       <City/>
+          <City />
         </Route>
       </Switch>
-
-      </BrowserRouter>
-
-    )
-  }
+    </BrowserRouter>
+  );
 }
 
 export default App;

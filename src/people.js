@@ -62,6 +62,7 @@ class People extends Component {
       image: require("./image/23.jpg"),
     },
     open: false,
+    count: 0,
   };
   handlechange = () => {
     console.log("clif");
@@ -76,10 +77,19 @@ class People extends Component {
       info: data,
     });
   };
+  triger = () => {
+    this.setState({
+      count: this.state.count + 1,
+    });
+  };
   render() {
     return (
       <div className="people-wraprr">
-        <Nav search={"People Search..."} />
+        <Nav
+          cc={this.state.count}
+          triger={this.triger}
+          search={"People Search..."}
+        />
         <div className="holss-fimnd">
           <div className="hjehrjfnnf">
             <AiOutlineSearch />

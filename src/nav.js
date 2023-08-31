@@ -356,10 +356,13 @@ class Nav extends Component {
             title={"Visuals"}
             data={[
               {
+                link: "/map",
                 name: "Relation Map",
                 logo: "https://cdn.vox-cdn.com/thumbor/pOMbzDvdEWS8NIeUuhxp23wi_cU=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/19700731/googlemaps.png",
               },
+
               {
+                link: "/city",
                 name: "City View",
                 logo: "https://thumbs.dreamstime.com/b/new-york-city-transparent-skyline-silhouette-usa-overlapping-buildings-41748851.jpg",
               },

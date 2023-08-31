@@ -76,7 +76,7 @@ class Nav extends Component {
         <div className="hold-tnt-hederdrrr">
           <div className="wrasprjtj">
             <Link to={"/"} className="nam4jrjrj gkejlrfrf">
-              <img src={!isDark ? darkLogo : whiteLogo} />
+              <img src={isDark ? whiteLogo : darkLogo} />
             </Link>
           </div>
           <div className="wrapeer-shtejophfjj">

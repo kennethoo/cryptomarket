@@ -1534,7 +1534,7 @@ class Home extends Component {
           </div>
 
           <div className="fjejnr">
-            <div className="titler">Tracking The Worlds In Markets</div>
+            <div className="titler">Tracking The Worlds Markets</div>
             <div className="titrler">
               The global crypto market cap is{" "}
               <span className="bloxfjhj">$16.7Q</span>, a{" "}
@@ -1565,7 +1565,7 @@ class Home extends Component {
             </div>
             <div className="card-sfbgif">
               <div className="bolx-hold-jrjir">
-                <p>Total Global Debt / Credit</p>
+                <p># of Internet Users / # of Digital Wallets</p>
               </div>
             </div>
           </div>
